@@ -1,0 +1,17 @@
+git clone https://github.com/SomeCrab/todel.git
+cd todel
+git status
+git switch -c feature
+"# todel" | Out-File -FilePath (Join-Path -Path $PWD -ChildPath "README.md")
+"# images`n*.jpg" | Add-Content -Path (Join-Path -Path $PWD -ChildPath ".gitignore")
+git add .
+git remote -v
+git remote set-url origin git@github.com:SomeCrab/todel.git
+git remote -v
+git commit -a -m "adding README, updating .gitignore"
+git push origin feature
+git commit -a --amend -m "adding README, updating .gitignore, ammend"
+git switch -
+git merge feature
+git status
+(Get-History -Count 17 | ForEach-Object { $_.CommandLine }) | Set-Content -Path "./history.txt"
