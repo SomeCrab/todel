@@ -1,5 +1,3 @@
-<details>
-    <summary>Graph</summary>
 ```mermaid
 graph TD
     U[User (HTTPS)] -->|GET https://api.wiru.site| DNS[(DNS)]
@@ -47,4 +45,4 @@ graph TD
     class TLS,WN,KUBE note;
 
 ```
-</details>
+
