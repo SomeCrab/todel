@@ -1,3 +1,6 @@
+🔶 **TODO:** release pin
+<span style="color:orange">TODO: release pin</span>
+![TODO](https://img.shields.io/badge/TODO-release%20pin-orange)
 [History](history.txt)
 
 text `README.md` 【F:README.md】
